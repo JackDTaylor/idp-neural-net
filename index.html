@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My network</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="controls">
+        <div id="epochMeter"></div>
+        <button id="resetBtn" onclick="myNetworkController.reset()" title="Reset">↺</button>
+        <button id="playBtn"  onclick="myNetworkController.play()"  title="Play">▶</button>
+        <button id="pauseBtn" onclick="myNetworkController.pause()" title="Pause">❙❙</button>
+        <button id="stepBtn"  onclick="myNetworkController.step()"  title="Step">▶❙</button>
+      </div>
+
+      <div id="graph"></div>
+      <div id="sidebar"></div>
+    </div>
+    <script src="/decimal-light.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

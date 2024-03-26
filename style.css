@@ -1,0 +1,82 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow: hidden;
+  color: hsl(0, 40%, 54%);
+  margin: 0;
+}
+
+#app {
+  display: flex;
+}
+
+#graph {
+  width: 60vw;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+#sidebar {
+  height: 100vh;
+
+  flex-grow: 1;
+
+  background-color: #e8e8e8;
+}
+
+#controls {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  padding: 0.5em;
+
+  background-color: #f2f2f2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+#controls button {
+  font-size: 24px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  line-height: 1;
+  margin: 0 0.25em;
+  border: 1px solid #333333;
+  color: #333333;
+  background-color: #eee;
+  user-select: none;
+}
+
+#controls button:hover {
+  background-color: #ddd;
+}
+
+#controls button:active {
+  background-color: #ccc;
+}
+
+#epochMeter {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 0.5em;
+  min-width: 256px;
+  text-align: right;
+  margin-left: -256px;
+}
